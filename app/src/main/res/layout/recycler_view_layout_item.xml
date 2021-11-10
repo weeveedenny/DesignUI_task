@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recycler_card_view"
+        android:layout_width="259dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recycler_image_view"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/recycle_cardview_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="18dp"
+                android:elevation="20dp"
+                android:text="@string/ola_machiavelli"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/recycler_cake"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/cake"
+                app:layout_constraintStart_toStartOf="@+id/recycle_cardview_firstname"
+                app:layout_constraintTop_toBottomOf="@+id/recycle_cardview_firstname" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:elevation="20dp"
+                android:text="@string/_10_20_2020"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/recycler_cake"
+                app:layout_constraintStart_toEndOf="@+id/recycler_cake"
+                app:layout_constraintTop_toTopOf="@+id/recycler_cake" />
+
+            <ImageView
+                android:id="@+id/calender"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/calendar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_cake" />
+
+            <TextView
+                android:id="@+id/recyclerView_days_to_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:elevation="20dp"
+                android:text="@string/_30_days_left"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/calender"
+                app:layout_constraintStart_toEndOf="@+id/calender"
+                app:layout_constraintTop_toTopOf="@+id/calender" />
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="94dp"
+                android:src="@drawable/confetti"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="2dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="#560BAD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/recycler_image_view"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/vectorfirst"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_card_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recycler_card_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

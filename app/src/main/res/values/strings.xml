@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My-Week4_task</string>
+    <string name="good_morning">Good morning</string>
+    <string name="upcoming_birthdays">Upcoming Birthdays</string>
+    <string name="ola_machiavelli">Ola Machiavelli</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_10_20_2020">10.20.2020</string>
+    <string name="_30_days_left">30 Days Left</string>
+    <string name="yaay">Yaay!</string>
+    <string name="it_s_victor_s_birthday.">It\'s Victor\'s Birthday.</string>
+
+</resources>

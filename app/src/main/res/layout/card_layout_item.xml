@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewpager_item_cardView"
+        android:layout_width="309dp"
+        android:layout_height="316dp"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewpager_item_cardView_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <ImageView
+                android:id="@+id/viewpager_item_pen_imageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="34dp"
+                android:src="@drawable/ic_pen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/underpen"
+                android:layout_width="25dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="31dp"
+                android:src="@drawable/vector__3_"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/viewpager_item_pen_imageView"
+                app:layout_constraintTop_toBottomOf="@id/viewpager_item_pen_imageView" />
+
+            <ImageView
+                android:id="@+id/viewpager_item_yaay_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/vector__2_"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/viewpager_item_birthday_icon_imageView"
+                android:layout_width="25dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="6dp"
+                android:src="@drawable/ic_birthday_flower"
+                app:layout_constraintBottom_toBottomOf="@+id/viewpager_item_yaay_textView"
+                app:layout_constraintStart_toEndOf="@+id/viewpager_item_yaay_textView"
+                app:layout_constraintTop_toTopOf="@+id/viewpager_item_yaay_textView" />
+
+            <TextView
+                android:id="@+id/viewpager_item_birthday_message_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:text="@string/it_s_victor_s_birthday."
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/viewpager_item_birthday_icon_imageView"
+                app:layout_constraintStart_toStartOf="@+id/viewpager_item_yaay_textView"
+                app:layout_constraintTop_toBottomOf="@+id/viewpager_item_yaay_textView" />
+
+            <ImageView
+                android:id="@+id/viewpager_item_call_imageView_backround"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/ic_circular_background"
+                app:layout_constraintEnd_toStartOf="@+id/viewpager_item_message_imageView_background"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewpager_item_birthday_message_textView" />
+
+            <ImageView
+                android:id="@+id/viewpager_item_call_imageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:elevation="20dp"
+                android:src="@drawable/ic_call"
+                app:layout_constraintBottom_toBottomOf="@+id/viewpager_item_call_imageView_backround"
+                app:layout_constraintEnd_toEndOf="@+id/viewpager_item_call_imageView_backround"
+                app:layout_constraintStart_toStartOf="@+id/viewpager_item_call_imageView_backround"
+                app:layout_constraintTop_toTopOf="@+id/viewpager_item_call_imageView_backround" />
+
+            <ImageView
+                android:id="@+id/viewpager_item_message_imageView_background"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="45dp"
+                android:src="@drawable/ic_circular_background"
+                app:layout_constraintEnd_toStartOf="@+id/viewpager_item_share_imageView_background"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/viewpager_item_call_imageView_backround"
+                app:layout_constraintTop_toTopOf="@+id/viewpager_item_call_imageView_backround" />
+
+            <ImageView
+                android:id="@+id/viewpager_item_message_imageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:elevation="20dp"
+                android:src="@drawable/ic_email"
+                app:layout_constraintBottom_toBottomOf="@+id/viewpager_item_message_imageView_background"
+                app:layout_constraintEnd_toEndOf="@+id/viewpager_item_message_imageView_background"
+                app:layout_constraintStart_toStartOf="@+id/viewpager_item_message_imageView_background"
+                app:layout_constraintTop_toTopOf="@+id/viewpager_item_message_imageView_background" />
+
+            <ImageView
+                android:id="@+id/viewpager_item_share_imageView_background"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:src="@drawable/ic_circular_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/viewpager_item_message_imageView_background"
+                app:layout_constraintTop_toTopOf="@+id/viewpager_item_message_imageView_background" />
+
+            <ImageView
+                android:id="@+id/viewpager_item_share_imageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:elevation="20dp"
+                android:src="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="@+id/viewpager_item_share_imageView_background"
+                app:layout_constraintEnd_toEndOf="@+id/viewpager_item_share_imageView_background"
+                app:layout_constraintStart_toStartOf="@+id/viewpager_item_share_imageView_background"
+                app:layout_constraintTop_toTopOf="@+id/viewpager_item_share_imageView_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
